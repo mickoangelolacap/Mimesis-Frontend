@@ -20,9 +20,8 @@ import './index.css'
 
 
 // Apollo setup.
-// const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/graphql' })
-const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/' })
-
+const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/graphql' })
+// const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' })
 
 // React rendering to DOM.
 const pageComponent = (
