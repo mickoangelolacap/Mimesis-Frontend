@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 // import {Link} from 'react-router-dom'
 import logo from '../images/logoM.png'
 
@@ -23,7 +23,11 @@ const AppNavBar = ()=> {
 	let nav
 	let name = localStorage.getItem('name')
 
-	const [auth, setAuth] = useState(name)
+	const [auth, setAuth] = useState(localStorage.getItem('token'))
+
+	useEffect(()=>{
+		setAuth(localStorage.getItem('token'))
+	})
 
 	if (auth) {
 		nav = 
