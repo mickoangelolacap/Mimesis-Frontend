@@ -11,3 +11,293 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Lora', serif;*/
+  color: #e7e7e7;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1c1c1c;
+}
+hr {
+  background-color: #666;
+}
+.lora {
+  font-family: 'Lora', serif;
+}
+.yellow {
+  color: #ffd600;
+}
+.black {
+  color: #000;
+}
+.grey {
+  color: #666;
+}
+
+/* Navbar */
+.navbar img {
+  height: 50px;
+}
+.nav-item {
+  margin: 0 10px;
+}
+/* End Navbar */
+
+/* Login */
+#login {
+  min-height: 80vh;
+}
+#login h1 {
+  font-size: 10em
+}
+#login input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  padding: 25px 10px;
+}
+#login input:focus {
+  background-color: #1c1c1c;
+  outline: none;
+}
+#login img {
+  height: 80px
+}
+/* End Login */
+
+/* Register */
+#register h1 {
+  font-size: 10em
+}
+#register input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  padding: 25px 10px;
+}
+#register select {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  /*padding: 10px 10px;*/
+}
+#register input:focus {
+  background-color: #1c1c1c;
+  outline: none;
+}
+#register img {
+  height: 80px
+}
+/* End Register */
+
+/* Home */
+#home h1 {
+  font-size: 10em
+}
+#home #scroll {
+  height: 80px
+}
+/* End Home */
+
+/* About */
+#meaning {
+  min-height: 100vh;
+  background-image: url(./images/aboutBG.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#meaning h1 {
+  font-size: 10em;
+}
+#meaning h2 {
+  font-size: 4em;
+}
+#artwork {
+  min-height: 100vh;
+}
+#artwork h1 {
+  font-size: 4em;
+}
+#artwork img:hover {
+  filter: opacity(.8);
+}
+#artistOverview {
+  height: 50vh;
+  background-image: url(./images/aboutoverviewBG.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#artistOverview .container {
+  /*margin: 0;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+}
+#quote {
+  min-height: 100vh;
+  background-image: url(./images/quoteBG.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#quote .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#quote h1 {
+  font-size: 5em;
+}
+/* End About */
+
+/* Footer */
+#footer {
+  min-height: 80vh;
+  background-color: #111;
+}
+.social-media a{
+  padding: 0 .2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 5px; 
+  opacity: .5;
+}
+.social-media a:hover{
+  opacity: 1;
+}
+#footer img {
+  height: 80px;
+  transform: rotate(180deg);
+}
+/* End Footer */
+
+/*ArtistPage*/
+#artist .container {
+  /*background-color: #222;*/
+}
+#artist .dp {
+  border-left: 10px solid #ffd600;
+}
+#artist .dp:hover {
+  filter: grayscale(1);
+  transition: .3s;
+}
+#artist .modal-content {
+  background-color: #1c1c1c; 
+}
+#artist input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  padding: 25px 10px;
+}
+#artist select {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  /*padding: 25px 10px;*/
+}
+/*END ArtistPage*/
+
+.shelterOverflow {
+  white-space: nowrap; 
+  height: 100%; 
+  overflow: scroll;
+}
+.shelterOverflow::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.shelterOverflow {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+th {
+  color: #ffd600;
+}
+
+/* Transaction */
+#transaction .container {
+  min-height: 100vh;
+}
+#transaction input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  /*padding: 25px 10px;*/
+}
+#transaction table {
+  table-layout: fixed; 
+}
+#transaction .modal-content {
+  background-color: #1c1c1c; 
+}
+/* End Transaction */
+
+/* Admin */
+.nav-tabs a:hover {
+    color: #ffd600;
+}
+.nav-tabs a:focus {
+    color: #ffd600;
+}
+#admin #book {
+  min-height: 100vh;
+}
+#admin input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #ffd600;
+  background-color: #1c1c1c;
+  /*padding: 25px 10px;*/
+}
+#admin table {
+  table-layout: fixed; 
+}
+#admin .modal-content {
+  background-color: #1c1c1c; 
+}
+#admin #users {
+  min-height: 100vh;
+}
+#admin #artists {
+  min-height: 140vh;
+}
+/* End Admin */
