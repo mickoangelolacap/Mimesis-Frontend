@@ -8,6 +8,8 @@ import {getTransactionsQuery, getUsersQuery, getArtistsQuery} from '../graphql/q
 
 import {deleteTransactionMutation, updateTransactionMutation, deleteUserMutation, addArtistMutation, deleteArtistMutation} from '../graphql/mutations'
 
+import AppNavbar2 from '../components/AppNavBar2'
+
 const AdminPage = (props)=> {
 
 	// console.log(localStorage.getItem('id'))
@@ -220,6 +222,7 @@ const AdminPage = (props)=> {
 	return(
 		
 		<div id="admin" className="container-fluid p-0">
+		<AppNavbar2/>
 			<div id="book" className="container">
 				<h1 className="lora yellow py-5">Booking Requests</h1>
 				<form className="form-inline mb-5">

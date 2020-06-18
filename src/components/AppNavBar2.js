@@ -10,6 +10,17 @@ const AppNavBar2 = ()=> {
 		window.location.href = "/"
 	}
 
+	let admin
+	if (localStorage.getItem('role') == 1) {
+		admin = <React.Fragment>
+		<a className="dropdown-item " href="/admin">Admin</a>
+		<a className="dropdown-item " onClick={()=> logout()}>Logout</a>
+		</React.Fragment>
+	}
+	else {
+		admin = <a className="dropdown-item " onClick={()=> logout()}>Logout</a>
+	}
+
 	return(
 
 		<nav id="top" className="navbar navbar-expand-lg navbar-dark p-5 mx-5">
@@ -36,8 +47,7 @@ const AppNavBar2 = ()=> {
 		          {name}
 		        </a>
 		        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a className="dropdown-item " href="/admin">Admin</a>
-		          <a className="dropdown-item " onClick={()=> logout()}>Logout</a>
+		          {admin}
 		        </div>
 		      </li>
 		</ul>

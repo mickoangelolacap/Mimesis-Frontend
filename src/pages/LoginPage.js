@@ -8,6 +8,8 @@ import scrolldown from '../images/scrolldown.gif'
 import { graphql} from 'react-apollo'
 import { loginMutation } from '../graphql/mutations'
 
+import AppNavbar from '../components/AppNavBar'
+
 const LoginPage = (props)=>{
 
 	const [email, setEmail] = useState('')
@@ -53,6 +55,7 @@ const LoginPage = (props)=>{
 
 	return(
 		<React.Fragment>
+		<AppNavbar/>
 			
 		<div id="login" className="container-fluid p-5">
 			<div className="row justify-content-md-center">

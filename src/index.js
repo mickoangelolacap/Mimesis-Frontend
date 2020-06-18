@@ -6,8 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 /*Page imports*/
-import AppNavbar from './components/AppNavBar'
-// import AppNavbar2 from './components/AppNavBar2'
+// import AppNavbar from './components/AppNavBar'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
 import HomePage from './pages/HomePage'
@@ -21,15 +20,15 @@ import './index.css'
 
 
 // Apollo setup.
-const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/graphql' })
-// const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/' })
-// const nodeServer = () => {return 'https://boiling-citadel-41652.herokuapp.com/'}
+// const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/graphql' })
+const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/' })
+
 
 // React rendering to DOM.
 const pageComponent = (
 	 <ApolloProvider client={ client }>
         <BrowserRouter>
-            <AppNavbar/>
+            
             <Switch>
                 <Route exact path="/register" component={ RegisterPage }/>
                 <Route exact path="/" component={ LoginPage }/>

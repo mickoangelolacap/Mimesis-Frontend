@@ -8,6 +8,8 @@ import About from '../components/About'
 import Footer from '../components/Footer'
 import scrolldown from '../images/scrolldown.gif'
 
+import AppNavbar2 from '../components/AppNavBar2'
+
 // function App() {
 //   function refreshPage() {
 //     window.location.reload(false)
@@ -17,7 +19,7 @@ import scrolldown from '../images/scrolldown.gif'
 const HomePage = ()=> {
 	return(
 		<React.Fragment>
-			
+		<AppNavbar2/>
 		<div id="home" className="container-fluid p-5">
 			<div className="row justify-content-md-center">
 				<div className="col-md-7">

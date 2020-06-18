@@ -12,6 +12,8 @@ import {getUsersQuery} from '../graphql/queries'
 
 import {addUserMutation} from '../graphql/mutations'
 
+import AppNavbar from '../components/AppNavBar'
+
 const RegisterPage = (props)=>{
 	console.log(props.getUsersQuery.users)
 
@@ -72,6 +74,7 @@ const RegisterPage = (props)=>{
 
 	return(
 		<React.Fragment>
+		<AppNavbar/>
 		<div id="register" className="container-fluid p-5">
 			<div className="row justify-content-md-center">
 				<div className="col-md-6">

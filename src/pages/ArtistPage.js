@@ -27,6 +27,8 @@ import Footer from '../components/Footer'
 import {getArtistsQuery} from '../graphql/queries'
 import {addTransactionMutation} from '../graphql/mutations'
 
+import AppNavbar2 from '../components/AppNavBar2'
+
 const ArtistPage = (props)=> {
 	
 	// console.log(props.getArtistsQuery.artists)
@@ -345,6 +347,7 @@ const ArtistPage = (props)=> {
 
 	return(
 		<React.Fragment>
+		<AppNavbar2/>
 		<div id="artist" className="container-fluid pb-5 mb-5">
 			<div className="container p-5">
 				<div className="row">

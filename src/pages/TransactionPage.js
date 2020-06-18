@@ -8,6 +8,8 @@ import {getTransactionsQuery} from '../graphql/queries'
 
 import {deleteTransactionMutation} from '../graphql/mutations'
 
+import AppNavbar2 from '../components/AppNavBar2'
+
 
 
 const TransactionPage = (props)=> {
@@ -67,7 +69,8 @@ const TransactionPage = (props)=> {
 	return(
 		
 		<div id="transaction" className="container-fluid p-0">
-			<div className="container">
+		<AppNavbar2/>
+			<div className="container pb-5 mb-5">
 				<form className="form-inline my-2">
 					<i className="fa fa-search search-icon mx-3 text-warning d-md-block d-none"></i>
 			      	<input className="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput"/>
