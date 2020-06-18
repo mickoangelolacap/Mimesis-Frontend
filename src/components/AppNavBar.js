@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import {Link} from 'react-router-dom'
 import logo from '../images/logoM.png'
 
@@ -10,7 +10,7 @@ const AppNavBar = ()=> {
 	}
 
 	let admin
-	if (localStorage.getItem('role') == 0) {
+	if (localStorage.getItem('role') == 1) {
 		admin = <React.Fragment>
 		<a className="dropdown-item " href="/admin">Admin</a>
 		<a className="dropdown-item " onClick={()=> logout()}>Logout</a>
@@ -23,7 +23,9 @@ const AppNavBar = ()=> {
 	let nav
 	let name = localStorage.getItem('name')
 
-	if (localStorage.getItem('token')) {
+	const [auth, setAuth] = useState(name)
+
+	if (auth) {
 		nav = 
 		<ul className="navbar-nav ml-auto">
 			<li className="nav-item">
