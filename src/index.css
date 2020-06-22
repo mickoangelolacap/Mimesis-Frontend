@@ -301,3 +301,34 @@ th {
   min-height: 140vh;
 }
 /* End Admin */
+
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 451px) {
+  /*Login*/
+  #login {
+    min-height: 100vh;
+    text-align: center;
+  }
+  #login h1 {
+    font-size: 70px;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  #login #form {
+    margin-top: 40px;
+  }
+  /*End Login*/
+
+  /*About*/
+  #meaning h1 {
+    font-size: 2em;
+  }
+  #meaning h2 {
+    font-size: 4em;
+  }
+  #artwork h1 {
+    font-size: 2em;
+  }
+  /*End About*/
+}

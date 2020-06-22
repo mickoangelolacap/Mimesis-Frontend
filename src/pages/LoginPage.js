@@ -57,14 +57,14 @@ const LoginPage = (props)=>{
 		<React.Fragment>
 		<AppNavbar/>
 			
-		<div id="login" className="container-fluid p-5">
+		<div id="login" className="container-fluid p-md-5 p-4">
 			<div className="row justify-content-md-center">
 				<div className="col-md-7">
 					<h1 className="lora yellow">Mimesis.</h1>
 					<h2 className="px-3 py-0">Learn Arts Professionally</h2>
 					<a href="#about" className="btn btn-outline-warning btn-lg px-5 ml-3 mt-3 lora">Learn more</a>
 				</div>
-				<div className="col-md-3 p-5">
+				<div id="form" className="col-md-3 p-5">
 					<h3 className="lora pb-2">LOGIN.</h3>
 					<form onSubmit={(e)=> login(e)}>
 						<div className="form-group">

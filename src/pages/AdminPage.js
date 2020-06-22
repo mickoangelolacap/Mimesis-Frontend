@@ -47,6 +47,7 @@ const AdminPage = (props)=> {
 			})
 		}
 	const deleteTransaction = (id) => {
+		alert('Are you sure you want to delete this appointment?')
 		props.deleteTransactionMutation({
 			variables: {id: id},
 			refetchQueries: [{query: getTransactionsQuery}]
@@ -73,7 +74,7 @@ const AdminPage = (props)=> {
 							<td className="py-4">{"₱ " + transaction.total}</td>
 							<td className="py-4">
 								<button className="btn btn-outline-warning btn-block" onClick={()=> updateTransaction1(transaction.id)}>Approve</button>
-								<button className="btn btn-outline-secondary btn-block mt-2" data-toggle="modal" data-target="#exampleModalCenter">Cancel</button>
+								<button className="btn btn-outline-secondary btn-block mt-2"  onClick={()=> deleteTransaction(transaction.id)}>Cancel</button>
 
 								<div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 								  <div className="modal-dialog modal-dialog-centered" role="document">
@@ -83,7 +84,7 @@ const AdminPage = (props)=> {
 								          <span aria-hidden="true">&times;</span>
 								        </button>
 								        <h1>Are you sure you want to cancel this appointment?</h1>
-								        <button type="button" className="btn btn-outline-warning mt-4" data-dismiss="modal" onClick={()=> deleteTransaction(transaction.id)}>Yes, I want to cancel</button>
+								        <button type="button" className="btn btn-outline-warning mt-4" data-dismiss="modal" data-toggle="modal" data-target="#exampleModalCenter">Yes, I want to cancel</button>
 								      </div>
 								    </div>
 								  </div>
@@ -115,7 +116,7 @@ const AdminPage = (props)=> {
 							<td className="py-4">{transaction.day}</td>
 							<td className="py-4">{"₱ " + transaction.total}</td>
 							<td className="py-4">
-								<button className="btn btn-outline-warning btn-block" data-toggle="modal" data-target="#exampleModal">Remove</button>
+								<button className="btn btn-outline-warning btn-block"  onClick={()=> deleteTransaction(transaction.id)}>Remove</button>
 
 								<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
 								  <div className="modal-dialog modal-dialog-centered" role="document">
@@ -125,7 +126,7 @@ const AdminPage = (props)=> {
 								          <span aria-hidden="true">&times;</span>
 								        </button>
 								        Are you sure you want to remove this record?
-								        <button type="button" className="btn btn-primary" data-dismiss="modal" onClick={()=> deleteTransaction(transaction.id)}>Yes</button>
+								        <button type="button" className="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Yes</button>
 								      </div>
 								    </div>
 								  </div>
@@ -137,7 +138,7 @@ const AdminPage = (props)=> {
 	}
 
 	const deleteUser = (userid) => {
-		// alert(userid)
+		alert('Are you sure you want to delete this user?')
 		props.deleteUserMutation({
 			variables: {id: userid},
 			refetchQueries: [{query: getUsersQuery}]
@@ -165,6 +166,7 @@ const AdminPage = (props)=> {
 	}
 
 	const deleteArtist = (id) => {
+		alert('Are you sure you want to delete this artist?')
 		props.deleteArtistMutation({
 			variables: {id: id},
 			refetchQueries: [{query: getArtistsQuery}]

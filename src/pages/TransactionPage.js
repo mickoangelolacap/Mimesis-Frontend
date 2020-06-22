@@ -21,6 +21,7 @@ const TransactionPage = (props)=> {
 	const transactions = props.getTransactionsQuery.transactions
 
 	const deleteTransaction = (id) => {
+		alert('Are you sure you want to cancel this appointment?')
 		props.deleteTransactionMutation({
 			variables: {id: id},
 			refetchQueries: [{query: getTransactionsQuery}]
@@ -43,7 +44,7 @@ const TransactionPage = (props)=> {
 						<td className="py-4">{"₱ " + transaction.total}</td>
 						<td className="py-4">{transaction.status === 0? <span className="text-warning">Pending</span> : transaction.status === 1? <span className="text-success">Active</span> : <span className="grey">Completed</span>}</td>
 						<td className="py-4">
-							<button className="btn btn-outline-warning btn-block" data-toggle="modal" data-target="#exampleModalCenter">Remove</button>
+							<button className="btn btn-outline-warning btn-block"  onClick={()=> deleteTransaction(transaction.id)}>Remove</button>
 
 							<div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 							  <div className="modal-dialog modal-dialog-centered" role="document">
@@ -53,7 +54,7 @@ const TransactionPage = (props)=> {
 							          <span aria-hidden="true">&times;</span>
 							        </button>
 							        <h1>Are you sure you want to cancel appointment?</h1>
-							        <button type="button" className="btn btn-outline-warning mt-4" data-dismiss="modal" onClick={()=> deleteTransaction(transaction.id)}>Yes, I want to cancel</button>
+							        <button type="button" className="btn btn-outline-warning mt-4" data-dismiss="modal" data-toggle="modal" data-target="#exampleModalCenter">Yes, I want to cancel</button>
 							      </div>
 							    </div>
 							  </div>
