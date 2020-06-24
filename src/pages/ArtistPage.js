@@ -92,7 +92,7 @@ const ArtistPage = (props)=> {
 						        </button>
 						        <h5 className="modal-title yellow p-3" id="exampleModalLongTitle">{artist.name}</h5>
 						        <div className="row justify-content-center">
-						        	<div className="col-8">
+						        	<div className="col-lg-8">
 						        		<form onSubmit={(e)=> addTransaction(e, transaction)} className="p-5">
 											<div className="form-group">
 											    <select className="form-control" id="category"
@@ -158,7 +158,7 @@ const ArtistPage = (props)=> {
 						        </button>
 						        <h5 className="modal-title yellow p-3" id="exampleModalLongTitle">{artist.name}</h5>
 						        <div className="row justify-content-center">
-						        	<div className="col-8">
+						        	<div className="col-lg-8">
 						        		<form onSubmit={(e)=> addTransaction(e, transaction)} className="p-5">
 											<div className="form-group">
 											    <select className="form-control" id="category"
@@ -231,7 +231,7 @@ const ArtistPage = (props)=> {
 						        </button>
 						        <h5 className="modal-title yellow p-3" id="exampleModalLongTitle">{artist.name}</h5>
 						        <div className="row justify-content-center">
-						        	<div className="col-8">
+						        	<div className="col-lg-8">
 						        		<form onSubmit={(e)=> addTransaction(e, transaction)} className="p-5">
 											<div className="form-group">
 											    <select className="form-control" id="category"
@@ -297,7 +297,7 @@ const ArtistPage = (props)=> {
 						        </button>
 						        <h5 className="modal-title yellow p-3" id="exampleModalLongTitle">{artist.name}</h5>
 						        <div className="row justify-content-center">
-						        	<div className="col-8">
+						        	<div className="col-lg-8">
 						        		<form onSubmit={(e)=> addTransaction(e, transaction)} className="p-5">
 											<div className="form-group">
 											    <select className="form-control" id="category"
@@ -349,9 +349,9 @@ const ArtistPage = (props)=> {
 		<React.Fragment>
 		<AppNavbar2/>
 		<div id="artist" className="container-fluid pb-5 mb-5">
-			<div className="container p-5">
+			<div className="container p-md-5 p-4">
 				<div className="row">
-					<div className="col-12 text-center">
+					<div className="col-12 mt-md-0 text-center">
 						<h1 className="lora grey">Our <strong className="lora yellow">Artists</strong></h1>
 						<hr/>
 					</div>
@@ -359,37 +359,37 @@ const ArtistPage = (props)=> {
 						<h1 className="lora grey mt-4">Music <strong className="yellow">.</strong></h1>
 					</div>
 
-					<div className="col-md-6 p-5">
+					<div data-aos="fade-up" className="col-lg-6 p-md-5 p-4">
 						<img src={bemDP} className="img-fluid dp" alt=""/>
 					</div>
-					<div className="col-md-6 p-5">
+					<div className="col-lg-6 p-md-5 p-4">
 						{bem}
 					</div>
-					<div className="col-md-6 p-5">
+					<div className="col-lg-6 p-md-5 p-4">
 						{joem}
 					</div>
-					<div className="col-md-6 p-5">
-						<img src={joemDP} className="img-fluid dp" alt=""/>
+					<div className="col-lg-6 p-md-5 p-4">
+						<img src={joemDP} className="img-fluid dp" alt="" data-aos="fade-up"/>
 					</div>	
 
 					<div className="col-12">
-						<h1 className="lora grey mt-4">Dance <strong className="yellow">.</strong></h1>
+						<h1 className="lora grey pt-5 mt-5">Dance <strong className="yellow">.</strong></h1>
 					</div>
-					<div className="col-md-6 p-5">
-						<img src={dapDP} className="img-fluid dp" alt=""/>
+					<div className="col-lg-6 p-md-5 p-4">
+						<img src={dapDP} className="img-fluid dp" alt="" data-aos="fade-up"/>
 					</div>
-					<div className="col-md-6 p-5">
+					<div className="col-lg-6 p-md-5 p-4">
 						{dap}
 					</div>
 
 					<div className="col-12">
-						<h1 className="lora grey mt-4">Multimedia <strong className="yellow">.</strong></h1>
+						<h1 className="lora grey pt-5 mt-5">Multimedia <strong className="yellow">.</strong></h1>
 					</div>
-					<div className="col-md-6 p-5">
+					<div className="col-lg-6 p-md-5 p-4">
 						{pil}
 					</div>
-					<div className="col-md-6 p-5">
-						<img src={pilDP} className="img-fluid dp" alt=""/>
+					<div className="col-lg-6 p-md-5 p-4">
+						<img src={pilDP} className="img-fluid dp" alt="" data-aos="fade-up"/>
 					</div>
 
 				</div>

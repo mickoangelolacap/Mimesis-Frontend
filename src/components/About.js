@@ -19,23 +19,23 @@ const About = ()=> {
 				<h1 className="p-5 lora grey">Artworks . <strong className="yellow lora">Shots</strong> . Performances</h1>
 				<div className="container bg-warning mt-5">
 					<div className="row">
-						<div className="col-6 p-0">
+						<div data-aos="fade-up" className="col-md-6 p-0">
 							<img src={perform1} alt="" className="img-fluid"/>
 						</div>
-						<div className="col-6 p-0">
+						<div data-aos="fade-up" className="col-md-6 p-0">
 							<img src={perform2} alt="" className="img-fluid"/>
 						</div>
-						<div className="col-6 p-0">
-							<img src={perform3} alt="" className="img-fluid"/>
+						<div className="col-md-6 p-0">
+							<img src={perform3} alt="" className="img-fluid" data-aos="fade-up"/>
 						</div>
-						<div className="col-6 p-0">
-							<img src={perform4} alt="" className="img-fluid"/>
+						<div className="col-md-6 p-0">
+							<img src={perform4} alt="" className="img-fluid" data-aos="fade-up"/>
 						</div>
-						<div className="col-6 p-0">
-							<img src={perform5} alt="" className="img-fluid"/>
+						<div className="col-md-6 p-0">
+							<img src={perform5} alt="" className="img-fluid" data-aos="fade-up"/>
 						</div>
-						<div className="col-6 p-0">
-							<img src={perform6} alt="" className="img-fluid"/>
+						<div className="col-md-6 p-0">
+							<img src={perform6} alt="" className="img-fluid" data-aos="fade-up"/>
 						</div>
 					</div>
 				</div>
@@ -43,10 +43,10 @@ const About = ()=> {
 			<div id="artistOverview">
 				<div className="container">
 					<div className="row">
-						<div className="col-md-8">
+						<div className="col-lg-8">
 							<img src={artistoverview} alt="" className="img-fluid"/>
 						</div>
-						<div className="col-md-4 p-2">
+						<div className="col-lg-4 text-center p-lg-2 pt-5">
 							<h4 ><strong className="lora">Tell us which artists you like</strong></h4>
 							<p className="">We'll create an experience just for you</p>
 							<a href="#top" className="btn btn-warning lora px-5 mt-3 font-weight-bold">LET'S GO</a>

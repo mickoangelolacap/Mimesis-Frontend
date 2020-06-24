@@ -15,9 +15,10 @@ import TransactionPage from './pages/TransactionPage'
 import AdminPage from './pages/AdminPage'
 
 import './index.css'
+import AOS from 'aos'
 
-
-
+// Animate On Scroll
+AOS.init();
 
 // Apollo setup.
 const client = new ApolloClient({ uri: 'https://boiling-citadel-41652.herokuapp.com/graphql' })

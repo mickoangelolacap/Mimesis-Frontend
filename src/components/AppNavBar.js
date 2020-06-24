@@ -66,7 +66,7 @@ const AppNavBar = ()=> {
 
 	return(
 
-		<nav id="top" className="navbar navbar-expand-lg navbar-dark p-md-5 p-2 mx-md-5 mx-2">
+		<nav id="top" className="navbar navbar-expand-lg navbar-dark p-md-5 mx-lg-5">
 		  <a className="navbar-brand" href="#">
 			<img src={logo} alt="" className="img-fluid m-3"/>
 		  	Mimesis

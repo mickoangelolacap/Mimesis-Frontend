@@ -71,29 +71,31 @@ const TransactionPage = (props)=> {
 		
 		<div id="transaction" className="container-fluid p-0">
 		<AppNavbar2/>
-			<div className="container pb-5 mb-5">
+			<div className="container pb-5 mb-5 p-4">
 				<form className="form-inline my-2">
 					<i className="fa fa-search search-icon mx-3 text-warning d-md-block d-none"></i>
 			      	<input className="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput"/>
 			    </form>
-				<table className="table table-hover mt-5">
-				  <thead>
-				    <tr>
-				      <th scope="col" className="py-4">Reference</th>
-				      <th scope="col" className="py-4">Artist</th>
-				      <th scope="col" className="py-4">Field</th>
-				      <th scope="col" className="py-4">Date</th>
-				      <th scope="col" className="py-4">Rate per hr</th>
-				      <th scope="col" className="py-4">Duration</th>
-				      <th scope="col" className="py-4">Payment</th>
-				      <th scope="col" className="py-4">Status</th>
-				      <th scope="col" className="py-4">Action</th>
-				    </tr>
-				  </thead>
-				  {
-				  	tbody
-				  }
-				</table>
+			    <div className="tableOverflow">
+					<table className="table table-hover mt-5 ">
+					  <thead className="">
+					    <tr>
+					      <th scope="col" className="py-4">Reference</th>
+					      <th scope="col" className="py-4">Artist</th>
+					      <th scope="col" className="py-4">Field</th>
+					      <th scope="col" className="py-4">Date</th>
+					      <th scope="col" className="py-4">Rate per hr</th>
+					      <th scope="col" className="py-4">Duration</th>
+					      <th scope="col" className="py-4">Payment</th>
+					      <th scope="col" className="py-4">Status</th>
+					      <th scope="col" className="py-4">Action</th>
+					    </tr>
+					  </thead>
+					  {
+					  	tbody
+					  }
+					</table>
+			    </div>
 			</div>
 			<Footer/>
 		</div>

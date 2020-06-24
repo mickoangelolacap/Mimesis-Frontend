@@ -302,33 +302,115 @@ th {
 }
 /* End Admin */
 
+/* MEDIUM SCREEN */
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  /*About*/
+  #meaning h1 {
+    font-size: 8em;
+  }
+  /*End About*/
+  .tableOverflow {
+    white-space: nowrap; 
+    height: 100%; 
+    overflow: scroll;
+  }
+  .tableOverflow::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+  .tableOverflow {
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      scrollbar-width: none;  /* Firefox */
+  }
+  #transaction table {
+    table-layout: auto; 
+  }
+  #admin #book table {
+    table-layout: auto; 
+  }
+  #admin #artists table {
+    table-layout: auto; 
+  }
+  #admin #users table {
+    table-layout: auto; 
+  }
+}
 
 /* SMALL SCREEN */
 @media only screen and (max-width: 451px) {
   /*Login*/
-  #login {
-    min-height: 100vh;
-    text-align: center;
-  }
   #login h1 {
     font-size: 70px;
-    padding-left: 20px;
-    padding-top: 50px;
   }
-  #login #form {
-    margin-top: 40px;
+  #register h1 {
+    font-size: 70px;
+  }
+  #home h1 {
+    font-size: 70px;
   }
   /*End Login*/
 
   /*About*/
   #meaning h1 {
-    font-size: 2em;
+    font-size: 4em;
   }
   #meaning h2 {
-    font-size: 4em;
+    font-size: 2em;
+  }
+  #meaning h3 {
+    font-size: 1em;
   }
   #artwork h1 {
     font-size: 2em;
   }
+  #quote h1 {
+    font-size: 3em;
+  }
   /*End About*/
+
+  /* Artist */
+  #artist button {
+    display: block;
+    width: 100%;
+  }
+  /* End Artist */
+
+  /* Admin */
+  #admin #book h1 {
+    font-size: 2em;
+  } 
+  #admin #book .nav-item {
+    font-size: 12px;
+  }
+  #admin #users h1 {
+    font-size: 2em;
+  }
+  #admin #artists h1 {
+    font-size: 2em;
+  } 
+  /* End Admin */
+
+  .tableOverflow {
+    white-space: nowrap; 
+    height: 100%; 
+    overflow: scroll;
+  }
+  .tableOverflow::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+  .tableOverflow {
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      scrollbar-width: none;  /* Firefox */
+  }
+  #transaction table {
+    table-layout: auto; 
+  }
+  #admin #book table {
+    table-layout: auto; 
+  }
+  #admin #artists table {
+    table-layout: auto; 
+  }
+  #admin #users table {
+    table-layout: auto; 
+  }
 }

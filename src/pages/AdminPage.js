@@ -225,7 +225,7 @@ const AdminPage = (props)=> {
 		
 		<div id="admin" className="container-fluid p-0">
 		<AppNavbar2/>
-			<div id="book" className="container">
+			<div id="book" className="container p-4">
 				<h1 className="lora yellow py-5">Booking Requests</h1>
 				<form className="form-inline mb-5">
 					<i className="fa fa-search search-icon mx-3 text-warning d-md-block d-none"></i>
@@ -242,112 +242,118 @@ const AdminPage = (props)=> {
 				    <a className="nav-link grey" id="pills-contact-tab" data-toggle="tab" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Completed</a>
 				  </li>
 				</ul>
-				<div className="tab-content" id="nav-tabContent">
-				  <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-					<table className="table table-hover">
-					  <thead>
-					    <tr>
-					      <th scope="col" className="py-4">Reference</th>
-					      <th scope="col"className="py-4">User</th>
-					      <th scope="col"className="py-4">Artist</th>
-					      <th scope="col"className="py-4">Date</th>
-					      <th scope="col"className="py-4">Payment</th>
-					      <th scope="col"className="py-4">Action</th>
-					    </tr>
-					  </thead>
-					  {
-					  	pending
-					  }	
-					</table>
-				  </div>
-				  <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-					<table className="table table-hover">
-					  <thead>
-					    <tr>
-					      <th scope="col"className="py-4">Reference</th>
-					      <th scope="col"className="py-4">User</th>
-					      <th scope="col"className="py-4">Artist</th>
-					      <th scope="col"className="py-4">Date</th>
-					      <th scope="col"className="py-4">Payment</th>
-					      <th scope="col"className="py-4">Action</th>
-					    </tr>
-					  </thead>
-					  {
-					  	active
-					  }	
-					</table>
-				  </div>
-				  <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-					<table className="table table-hover">
-					  <thead>
-					    <tr>
-					      <th scope="col"className="py-4">Reference</th>
-					      <th scope="col"className="py-4">User</th>
-					      <th scope="col"className="py-4">Artist</th>
-					      <th scope="col"className="py-4">Date</th>
-					      <th scope="col"className="py-4">Payment</th>
-					      <th scope="col"className="py-4">Action</th>
-					    </tr>
-					  </thead>
-					  {
-					  	completed
-					  }	
-					</table>
-				  </div>
-				</div>
+			    <div className="tableOverflow">
+					<div className="tab-content" id="nav-tabContent">
+					  <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<table className="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col" className="py-4">Reference</th>
+						      <th scope="col"className="py-4">User</th>
+						      <th scope="col"className="py-4">Artist</th>
+						      <th scope="col"className="py-4">Date</th>
+						      <th scope="col"className="py-4">Payment</th>
+						      <th scope="col"className="py-4">Action</th>
+						    </tr>
+						  </thead>
+						  {
+						  	pending
+						  }	
+						</table>
+					  </div>
+					  <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<table className="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col"className="py-4">Reference</th>
+						      <th scope="col"className="py-4">User</th>
+						      <th scope="col"className="py-4">Artist</th>
+						      <th scope="col"className="py-4">Date</th>
+						      <th scope="col"className="py-4">Payment</th>
+						      <th scope="col"className="py-4">Action</th>
+						    </tr>
+						  </thead>
+						  {
+						  	active
+						  }	
+						</table>
+					  </div>
+					  <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+						<table className="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col"className="py-4">Reference</th>
+						      <th scope="col"className="py-4">User</th>
+						      <th scope="col"className="py-4">Artist</th>
+						      <th scope="col"className="py-4">Date</th>
+						      <th scope="col"className="py-4">Payment</th>
+						      <th scope="col"className="py-4">Action</th>
+						    </tr>
+						  </thead>
+						  {
+						  	completed
+						  }	
+						</table>
+					  </div>
+					</div>
+			    </div>
 			</div>
 			
-			<div id="users" className="container">
+			<div id="users" className="container p-4">
 				<h1 className="lora yellow py-5">User Records</h1>
 				<form className="form-inline mb-4">
 					<i className="fa fa-search search-icon mx-3 text-warning d-md-block d-none"></i>
 			      	<input className="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput2"/>
 			    </form>
-				<table className="table table-hover">
-				  <thead>
-				    <tr>
-				      <th scope="col"className="py-4">Name</th>
-				      <th scope="col"className="py-4">Email</th>
-				      <th scope="col"className="py-4">Contact</th>
-				      <th scope="col"className="py-4">Age</th>
-				      <th scope="col"className="py-4">Gender</th>
-				      <th scope="col"className="py-4">Address</th>
-				      <th scope="col"className="py-4">Action</th>
-				    </tr>
-				  </thead>
-				  <tbody id="myTable2">
-					  {
-					  	userRow
-					  }	
-				  </tbody>
-				</table>
+			    <div className="tableOverflow">
+					<table className="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col"className="py-4">Name</th>
+					      <th scope="col"className="py-4">Email</th>
+					      <th scope="col"className="py-4">Contact</th>
+					      <th scope="col"className="py-4">Age</th>
+					      <th scope="col"className="py-4">Gender</th>
+					      <th scope="col"className="py-4">Address</th>
+					      <th scope="col"className="py-4">Action</th>
+					    </tr>
+					  </thead>
+					  <tbody id="myTable2">
+						  {
+						  	userRow
+						  }	
+					  </tbody>
+					</table>
+			    </div>
 			</div>
 			
-			<div id="artists" className="container pb-5 mb-5">
+			<div id="artists" className="container pb-5 mb-5 p-4">
 				<h1 className="lora yellow py-5">Artist Records</h1>
 				<form className="form-inline mb-4">
 					<i className="fa fa-search search-icon mx-3 text-warning d-md-block d-none"></i>
 			      	<input className="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput3"/>
 			    </form>
-				<table className="table table-hover">
-				  <thead>
-				    <tr>
-				      <th scope="col"className="py-4">Name</th>
-				      <th scope="col"className="py-4">Art Field</th>
-				      <th scope="col"className="py-4">Address</th>
-				      <th scope="col"className="py-4">Contact</th>
-				      <th scope="col"className="py-4">Online Rate /hr</th>
-				      <th scope="col"className="py-4">Home Rate /hr</th>
-				      <th scope="col"className="py-4">Status</th>
-				      <th scope="col"className="py-4">Action</th>
-				    </tr>
-				  </thead>
-				  <tbody id="myTable3">
-					  {
-					  	artistRow
-					  }	
-				  </tbody>
-				</table>
+			    <div className="tableOverflow">
+					<table className="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col"className="py-4">Name</th>
+					      <th scope="col"className="py-4">Art Field</th>
+					      <th scope="col"className="py-4">Address</th>
+					      <th scope="col"className="py-4">Contact</th>
+					      <th scope="col"className="py-4">Online Rate /hr</th>
+					      <th scope="col"className="py-4">Home Rate /hr</th>
+					      <th scope="col"className="py-4">Status</th>
+					      <th scope="col"className="py-4">Action</th>
+					    </tr>
+					  </thead>
+					  <tbody id="myTable3">
+						  {
+						  	artistRow
+						  }	
+					  </tbody>
+					</table>
+			    </div>
 
 				<button type="button" className="btn btn-warning px-5 mt-4 lora font-weight-bold" data-toggle="modal" data-target="#addartist">
 				  ADD ARTIST

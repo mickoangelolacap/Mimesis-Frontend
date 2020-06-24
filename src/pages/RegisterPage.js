@@ -75,14 +75,14 @@ const RegisterPage = (props)=>{
 	return(
 		<React.Fragment>
 		<AppNavbar/>
-		<div id="register" className="container-fluid p-5">
-			<div className="row justify-content-md-center">
-				<div className="col-md-6">
+		<div id="register" className="container-fluid p-md-5 p-4">
+			<div className="row justify-content-md-center text-md-left text-center">
+				<div className="col-lg-6">
 					<h1 className="lora yellow">Mimesis.</h1>
 					<h2 className="px-3 py-0">Learn Arts Professionally</h2>
 					<a href="#about" className="btn btn-outline-warning btn-lg px-5 ml-3 mt-3 lora">Learn more</a>
 				</div>
-				<div className="col-md-4">
+				<div className="col-lg-4 col-md-8 p-5 mt-lg-0 mt-5">
 					<h3 className="lora pb-2">JOIN US NOW.</h3>	
 					<form onSubmit={(e)=> registerNewUser(e)}>
 						<div className="form-row">

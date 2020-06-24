@@ -20,14 +20,14 @@ const HomePage = ()=> {
 	return(
 		<React.Fragment>
 		<AppNavbar2/>
-		<div id="home" className="container-fluid p-5">
-			<div className="row justify-content-md-center">
-				<div className="col-md-7">
+		<div id="home" className="container-fluid p-md-5 p-4">
+			<div className="row justify-content-md-center text-md-left text-center">
+				<div className="col-lg-7">
 					<h1 className="lora yellow">Mimesis.</h1>
 					<h2 className="px-3 py-0">Learn Arts Professionally</h2>
 					<a href="#about" className="btn btn-outline-warning btn-lg px-5 ml-3 mt-3 lora">Learn more</a>
 				</div>
-				<div className="col-md-3">
+				<div className="col-lg-3 col-md-8 p-5 mt-lg-0 mt-5">
 					<img src={homeBG} alt="" className="img-fluid"/>
 				</div>
 			</div>
